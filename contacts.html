@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mary Nyambura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
+                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover, nav a.active {
+            color: #ffffff;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .contact-card {
+            background: white;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-card h1 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .contact-card p {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        /* Contact List */
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #374151;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            width: 40px;
+            margin-right: 15px;
+            color: #2563eb;
+        }
+
+        .contact-item:hover {
+            background: #ffffff;
+            border-color: #2563eb;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+        }
+
+        /* Brand Colors for Icons */
+        .fa-linkedin { color: #0077b5 !important; }
+        .fa-github { color: #181717 !important; }
+        .fa-twitter { color: #1da1f2 !important; }
+        .fa-whatsapp { color: #25d366 !important; }
+        .fa-envelope { color: #ea4335 !important; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="project.html">Projects</a>
+        <a href="labs.html">Labs</a>
+        <a href="contacts.html" class="active">Contact</a>
+    </nav>
+
+    <main class="contact-container">
+        <div class="contact-card">
+            <h1>Let's Connect</h1>
+            <p>I am currently open to networking, let us connect.</p>
+
+            <div class="contact-list">
+                <a href="mailto:marynyambura657@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    marynyambura657@gmail.com
+                </a>
+
+                <a href="https://wa.me/254713553059" target="_blank" class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    +254 713 553 059
+                </a>
+
+                <a href="https://linkedin.com/in/mary-nyambura" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn Profile
+                </a>
+
+                <a href="https://github.com/Mary-Gitau" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    GitHub Repositories
+                </a>
+
+                <a href="https://twitter.com/marie1gitau" target="_blank" class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    Follow on Twitter
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Mary Nyambura | Built with VS Code
+    </footer>
+
+</body>
+</html>

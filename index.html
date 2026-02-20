@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Nyambura Gitau | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* INTERACTIVE BACKGROUND ANIMATION */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Subaly colorful background that moves */
+            background: linear-gradient(-45deg, #f9fafb, #f3f4f6, #e5e7eb, #ffffff);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+           
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
+                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #111827;
+            padding: 1rem;
+            text-align: center;
+            z-index: 10;
+        }
+        nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover, nav a.active {
+            color: #ffffff;
+        }
+
+        /* Hero Container */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Profile Photo Styling with Pulse Effect */
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+        }
+        .profile-photo:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #1512dd;
+            letter-spacing: -1px;
+        }
+        .tagline {
+            font-size: 1.25rem;
+            color: #ffffff;
+            max-width: 700px;
+            margin: 15px 0 40px 0;
+            line-height: 1.6;
+        }
+
+        /* Quick Contact Links */
+        .home-contacts {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background-color: #ffffff;
+            color: #374151;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: #111827;
+            color: #ffffff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .tagline { font-size: 1.1rem; }
+            .profile-photo { width: 160px; height: 160px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="labs.html">Labs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="hero">
+        <img src="profile pic..jpg" alt="Mary Nyambura" class="profile-photo">
+        
+        <h1>Mary Nyambura</h1>
+        
+        <p class="tagline">
+            Cybersecurity Analyst | IT Manager | Software Developer | Architecting Secure Systems through Development, Automation, and Rigorous Technical Documentation.
+        </p>
+
+        <div class="home-contacts">
+            <a href="mailto:marynyambura657@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://github.com/Mary-Gitau" target="_blank" class="contact-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/mary-nyambura" target="_blank" class="contact-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

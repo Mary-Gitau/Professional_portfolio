@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Mary Nyambura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f3f4f6;
+            color: #1f2937;
+
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
+                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .project-card,
+        .link-card,
+        .detail-box {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+
+        .project-card:hover,
+        .link-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+            border: 1px solid #2563eb;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ffffff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header & PDF Button */
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .resume-header h1 {
+            margin: 0;
+            color: #111827;
+        }
+
+        .download-btn {
+            background-color: #ef4444;
+            /* Red for PDF */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #dc2626;
+        }
+
+        /* Professional Summary Section */
+        .summary-box {
+            background: #f9fafb;
+            padding: 20px;
+            border-left: 4px solid #2563eb;
+            margin-bottom: 40px;
+            font-style: italic;
+            color: #4b5563;
+        }
+
+        /* General Sections */
+        h2 {
+            font-size: 1.25rem;
+            color: #2563eb;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            color: #111827;
+        }
+
+        .sub-info {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #374151;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .resume-header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="project.html">Projects</a>
+        <a href="labs.html">Labs</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <header class="resume-header">
+            <div>
+                <h1>Mary Nyambura</h1>
+                <p>Nairobi, Kenya</p>
+            </div>
+            <a href="assets/Mary Nyambura_Curriculum Vitae.pdf" class="download-btn" download>
+                <i class="fas fa-file-pdf"></i> Download CV
+            </a>
+        </header>
+
+        <section class="summary-box">
+            ICT Manager and aspiring Cybersecurity Analyst with 5+ years of experience in IT infrastructure management,
+            financial systems, data analytics, and compliance. Currently transitioning into a dedicated cybersecurity
+            role through the Cyber Shujaa program, with hands-on experience in AWS QuickSight BI deployment, network
+            monitoring, risk assessment, and security awareness training. Proven ability to bridge technical systems,
+            business intelligence, and financial operations to drive performance, reduce losses, and strengthen
+            organizational security posture.
+        </section>
+
+        <section class="manager-profile">
+            <div class="summary-header">
+                <h2>Cybersecurity & IT Leadership</h2>
+                <p class="mission-statement">
+                    I bridge ICT management with cybersecurity to build secure, resilient, and data-driven systems.
+                </p>
+            </div>
+
+            <div class="resume-grid">
+                <div class="resume-column">
+                    <h3><i class="fas fa-tasks"></i> What I Do</h3>
+                    <ul>
+                        <li><strong>Network Security:</strong> Monitor and secure organizational networks using
+                            administration consoles.</li>
+                        <li><strong>Security Culture:</strong> Implement Security Awareness Training programs (Data
+                            Protection & Social Engineering defense).</li>
+                        <li><strong>Infrastructure:</strong> Maintain 99.9% system uptime through proactive
+                            infrastructure management.</li>
+                        <li><strong>Risk Analysis:</strong> Conduct risk assessments in financial and technical
+                            environments.</li>
+                        <li><strong>Compliance:</strong> Support compliance with data protection requirements.</li>
+                    </ul>
+                </div>
+
+                <div class="resume-column">
+                    <h3><i class="fas fa-bullseye"></i> Current Focus (2026)</h3>
+                    <ul>
+                        <li><strong>Security Analyst Training:</strong> Cyber Shujaa Program specialist.</li>
+                        <li><strong>Threat Intelligence:</strong> Fundamentals of proactive defense.</li>
+                        <li><strong>Detection:</strong> Vulnerability assessment & detection practices.</li>
+                        <li><strong>Data Science:</strong> Cloud data visualization using AWS QuickSight.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="value-proposition">
+                <p><strong>Value I Bring:</strong> I understand both the technical and business risk side of
+                    cybersecurity — especially in financial systems.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p><strong>Security Tools:</strong>Nessus, OpenVAS, Nmap, Burp Suite, Metasploit, Wireshark</p>
+            <p><strong>Languages:</strong> Python, JavaScript, HTML5, CSS3, PostgreSQL,React</p>
+            <p><strong>Other:</strong> Git/GitHub, Linux , Technical Documentation,AWS</p>
+        </section>
+    </div>
+
+</body>
+
+</html>
