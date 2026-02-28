@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +19,11 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-        
+
             font-family: 'Inter', sans-serif;
             margin: 0;
-            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
-                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)),
+                url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-attachment: fixed;
             color: #ffffff;
@@ -34,6 +35,7 @@
             padding: 1rem;
             text-align: center;
         }
+
         nav a {
             color: #9ca3af;
             text-decoration: none;
@@ -41,7 +43,9 @@
             font-weight: 500;
             transition: 0.3s;
         }
-        nav a:hover, nav a.active {
+
+        nav a:hover,
+        nav a.active {
             color: #ffffff;
         }
 
@@ -52,8 +56,18 @@
             background: white;
             border-bottom: 1px solid #e5e7eb;
         }
-        .header h1 { font-size: 2.5rem; margin: 0; color: #111827; }
-        .header p { color: #6b7280; font-size: 1.1rem; margin-top: 10px; }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #111827;
+        }
+
+        .header p {
+            color: #6b7280;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
 
         /* Container */
         .container {
@@ -79,11 +93,12 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .project-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15);
         }
-        
+
         /* Icon Header per Card */
         .project-icon-box {
             height: 120px;
@@ -94,24 +109,39 @@
             color: white;
         }
 
-        .payroll-bg { background: #1e40af; } /* Deep Blue */
-        .customer-bg { background: #7c3aed; } /* Purple */
-        .loan-bg { background: #059669; } /* Green */
+        .payroll-bg {
+            background: #1e40af;
+        }
+
+        /* Deep Blue */
+        .customer-bg {
+            background: #7c3aed;
+        }
+
+        /* Purple */
+        .loan-bg {
+            background: #059669;
+        }
+
+        /* Green */
 
         .project-content {
             padding: 25px;
             flex-grow: 1;
         }
+
         .project-content h3 {
             margin: 0 0 12px 0;
             color: #111827;
             font-size: 1.25rem;
         }
+
         .project-content p {
             color: #4b5563;
             font-size: 0.95rem;
             margin-bottom: 20px;
-            height: 80px; /* Ensures alignment even with different text lengths */
+            height: 80px;
+            /* Ensures alignment even with different text lengths */
             overflow: hidden;
         }
 
@@ -122,6 +152,7 @@
             gap: 8px;
             margin-bottom: 20px;
         }
+
         .tag {
             background: #f3f4f6;
             color: #374151;
@@ -138,6 +169,7 @@
             padding: 15px 25px;
             background: #f9fafb;
         }
+
         .project-footer a {
             text-decoration: none;
             color: #111827;
@@ -147,14 +179,23 @@
             align-items: center;
             gap: 8px;
         }
-        .project-footer a:hover { color: #2563eb; }
+
+        .project-footer a:hover {
+            color: #2563eb;
+        }
 
         @media (max-width: 600px) {
-            .header h1 { font-size: 2rem; }
-            .project-content p { height: auto; }
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .project-content p {
+                height: auto;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <nav>
@@ -173,14 +214,15 @@
 
     <div class="container">
         <div class="project-grid">
-            
+
             <article class="project-card">
                 <div class="project-icon-box payroll-bg">
                     <i class="fas fa-file-invoice-dollar"></i>
                 </div>
                 <div class="project-content">
                     <h3>Payroll Management System</h3>
-                    <p>A computational system designed to automate employee salary calculations, tax deductions, and payment records.</p>
+                    <p>A computational system designed to automate employee salary calculations, tax deductions, and
+                        payment records.</p>
                     <div class="tags">
                         <span class="tag">Python</span>
                         <span class="tag">Automation</span>
@@ -200,7 +242,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Customer-Based Simulator</h3>
-                    <p>A simulation engine that models customer behavior and interactions to predict service demand and optimize resource allocation.</p>
+                    <p>A simulation engine that models customer behavior and interactions to predict service demand and
+                        optimize resource allocation.</p>
                     <div class="tags">
                         <span class="tag">Object Oriented Programming</span>
                         <span class="tag">Simulation</span>
@@ -220,7 +263,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Loan Calculation Simulator</h3>
-                    <p>An algorithmic tool for simulating loan repayment schedules, interest accruals, and financial risk assessment over time.</p>
+                    <p>An algorithmic tool for simulating loan repayment schedules, interest accruals, and financial
+                        risk assessment over time.</p>
                     <div class="tags">
                         <span class="tag">Financial Algorithms</span>
                         <span class="tag">Data Logic</span>
@@ -238,4 +282,5 @@
     </div>
 
 </body>
+
 </html>
